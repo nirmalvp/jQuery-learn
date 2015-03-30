@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	.emphasis {font-weight: bold;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+/*
+	$(function(){
+		$("li:first-child").addClass("emphasis")
+	})
+	Using $(function(){}) is same as $(document).ready(function(){})..ie wait till dom is loaded to execute fn*/
+	$(document).ready(function(){
+		console.log($("li:first-child"))
+		$("li:first-child").addClass("emphasis")
+	})
+</script>
+</head>
+<body>
+<ul>
+	<li>Hello</li>
+	<li>Hello2</li>
+	<li>Hello3</li>
+</ul>
+</body>
+</html>
