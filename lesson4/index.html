@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1>Welcome to awesomeness</h1>
+	<link rel="stylesheet" type="text/css" href="day.css">
+</head>
+
+<body>
+	<div>
+		<button id ="startButton" data-fileName="day.css">Day</button>
+		<button data-fileName="night.css">Night</button>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	(function toggleDayAndNight(){
+		$("#startButton").attr('disabled','disabled')
+		var buttons = $("button")
+		var link = $('link')
+		buttons.on("click",function(){
+			var buttonClicked = $(this)
+			var stylesheet = buttonClicked.attr('data-fileName');
+			console.log(stylesheet)
+			link.attr('href',stylesheet)
+			buttonClicked.attr('disabled','disabled')
+			buttonClicked.siblings('button').removeAttr('disabled')	
+
+		})
+
+	}())
+	</script>
+
+</body>
+</html>

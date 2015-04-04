@@ -1,0 +1,25 @@
+body{
+	margin: auto;
+	width :500px;
+}
+dl{
+	
+}
+dd{
+	margin : 0;
+	padding: 1em 0;
+	
+	
+}
+
+dt{
+	cursor: pointer;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.5em;
+	background: #E3E3E3
+}
+
+.hide{
+	display: none;
+}
